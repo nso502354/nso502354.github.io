@@ -1,17 +1,90 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-03-11T01:12:47+09:00</updated><id>http://localhost:4000/</id><title type="html">Seize the Day!</title><subtitle>오늘도 열심히!
-</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2017/03/10/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2017-03-10T23:48:05+09:00</published><updated>2017-03-10T23:48:05+09:00</updated><id>http://localhost:4000/jekyll/update/2017/03/10/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2017/03/10/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="http://jekyllrb.com" version="3.4.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-03-11T13:41:26+09:00</updated><id>http://localhost:4000/</id><title type="html">Seize the Day!</title><subtitle>오늘도 열심히!
+</subtitle><entry><title type="html">Swift - 구조체, 클래스</title><link href="http://localhost:4000/jekyll/update/2017/03/11/swift3-struct-class.html" rel="alternate" type="text/html" title="Swift - 구조체, 클래스" /><published>2017-03-11T13:40:05+09:00</published><updated>2017-03-11T13:40:05+09:00</updated><id>http://localhost:4000/jekyll/update/2017/03/11/swift3-struct-class</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2017/03/11/swift3-struct-class.html">&lt;h3 id=&quot;구조체-클래스&quot;&gt;구조체, 클래스?&lt;/h3&gt;
+&lt;p&gt;구조체와 클래스는 프로그래머가 데이터를 용도에 맞게 묶어 표현하고자 할 때 용이합니다. 구조체와 클래스는 프로퍼티와 메서드를 사용하여 데이터를 구조화하여 관리할 수 있습니다.&lt;/p&gt;
 
-&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+&lt;h3 id=&quot;같은점&quot;&gt;같은점&lt;/h3&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;값을 저장하기 위해 프로퍼티(저장 프로퍼티)를 정의할 수 있습니다. 연산 프로퍼티도 정의 가능합니다.&lt;/li&gt;
+  &lt;li&gt;기능 수행을 위해 메서드를 정의할 수 있습니다.&lt;/li&gt;
+  &lt;li&gt;서브스크립트 문법을 통해 구조체 또는 클래스가 가지는 값(프로퍼티)에 접근하도록 서브스크립트를 정의할 수 있습니다.&lt;/li&gt;
+  &lt;li&gt;초기화될 때의 상태를 지정하기 위해 이니셜라이저를 정의할 수 있습니다.
+    &lt;ul&gt;
+      &lt;li&gt;구조체는 기본으로 멤버와이즈 이니셜라이저가 제공됩니다. 또, 사용자 정의 이니셜라이저도 구현이 가능합니다.&lt;/li&gt;
+      &lt;li&gt;클래스도 기본 이니셜라이저 외에 사용자가 직접 이니셜라이저를 정의할 수 있습니다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;초기 구현과 더불어 새로운 기능 추가를 위해 익스텐션을 통해 확장할 수 있습니다.&lt;/li&gt;
+  &lt;li&gt;특정 기능을 수행하기 위해 특정 프로토콜을 준수(Adopt)할 수 있습니다.&lt;/li&gt;
+  &lt;li&gt;소스파일 하나에 여러 개의 구조체와 여러 개의 클래스를 정의하고 구현 가능합니다.&lt;/li&gt;
+  &lt;li&gt;중첩 함수와 마찬가지로 구조체 안에 구조체, 클래스 안에 클래스 등과 같이 중첩 타입의 정의 및 선언 가능합니다.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;차이점&quot;&gt;차이점&lt;/h3&gt;
+&lt;p&gt;데이터를 구조화하여 관리하는 구조체와 클래스는 서로 같은 점도 있지만, 서로 차이점도 있습니다.&lt;/p&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">Introducing Lanyon</title><link href="http://localhost:4000/2014/01/02/introducing-lanyon.html" rel="alternate" type="text/html" title="Introducing Lanyon" /><published>2014-01-02T00:00:00+09:00</published><updated>2014-01-02T00:00:00+09:00</updated><id>http://localhost:4000/2014/01/02/introducing-lanyon</id><content type="html" xml:base="http://localhost:4000/2014/01/02/introducing-lanyon.html">&lt;p&gt;Lanyon is an unassuming &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; theme that places content first by tucking away navigation in a hidden drawer. It’s based on &lt;a href=&quot;http://getpoole.com&quot;&gt;Poole&lt;/a&gt;, the Jekyll butler.&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;구조체&lt;/th&gt;
+      &lt;th&gt;클래스&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;전통적인 OOP 관점에서의 클래스&lt;/td&gt;
+      &lt;td&gt;C언어 등의 구조체보다 다양한 기능&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;b&gt;참조 타입&lt;/b&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;b&gt;값 타입&lt;/b&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;단일 상속&lt;/td&gt;
+      &lt;td&gt;상속 불가&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;타입캐스팅 가능&lt;/td&gt;
+      &lt;td&gt;타입캐스팅 불가&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;디이니셜라이저 가능&lt;/td&gt;
+      &lt;td&gt;디이니셜라이져 불가&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;iOS 프레임워크의 대부분의 큰 뼈대는 모두 클래스로 구성&lt;/td&gt;
+      &lt;td&gt;Swift의 대부분의 큰 뼈대는 모두 구조체로 구성&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;가장 큰 차이는 인스턴스의 타입입니다. 클래스의 인스턴스는 참조 타입이며 구조체의 인스턴스는 값 타입입니다. &lt;code class=&quot;highlighter-rouge&quot;&gt;값 타입과 참조 타입의 가장 큰 차이는 '무엇이 전달되느냐'입니다.&lt;/code&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;어떤 함수의 전달인자로 값 타입의 값을 넘기면 &lt;b&gt;전달될 값이 복사&lt;/b&gt;되어 전달됩니다.&lt;/li&gt;
+  &lt;li&gt;어떤 함수의 전달인자로 참조 타입의 값을 넘기면 &lt;b&gt;참조(주소)가 전달&lt;/b&gt;됩니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;인스턴스와 객체
+흔히 다른 프로그래밍 언어에서는 클래스의 인스턴스를 객체라고 부릅니다. 물론 스위프트에서도 객체라고 표현하는 것이 틀린 것은 아니지만, 스위프트 공식 문서에는 좀 더 한정적인 인스턴스라는 용어를 사용합니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;구조체와-클래스-선택해서-사용하기&quot;&gt;구조체와 클래스 선택해서 사용하기&lt;/h3&gt;
+
+&lt;p&gt;구조체와 클래스는 모두 새로운 데이터 타입을 정의하고 기능을 추가한다는 점에서는 같습니다. 하지만 구조체 인스턴스는 항상 값 타입이고, 클래스 인스턴스는 참조 타입입니다. 그 의미는 생긴 것은 비슷하지만 용도는 다르다는 의미입니다. &lt;code class=&quot;highlighter-rouge&quot;&gt;프로젝트의 성격에 따라, 데이터의 활용 용도에 따라, 특정 타입을 구현할 때 구조체와 클래스 둘 중 하나를 선택&lt;/code&gt;해서 사용해야 합니다.&lt;/p&gt;
+
+&lt;p&gt;애플 가이드라인에 따른 구조체 사용 조건&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;연관된 간단한 값의 집합을 캡슐화하는 것만이 목적일 때&lt;/li&gt;
+  &lt;li&gt;캡슐화된 값이 참조되는 것보다 복사되는 것이 합당할 때&lt;/li&gt;
+  &lt;li&gt;구조체에 저장된 프로퍼티가 값 타입이며 참조되는 것보다 복사되는 것이 합당할 때&lt;/li&gt;
+  &lt;li&gt;다른 타입으로부터 상속받거나 자신이 상속될 필요가 없을 때&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;글의 일부 내용은 야곰님의 저서 &lt;a href=&quot;http://book.naver.com/bookdb/book_detail.nhn?bid=11445773&quot;&gt;스위프트 프로그래밍&lt;/a&gt;(2017, 한빛미디어)를 참고하여 작성되었습니다.&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name></name></author><summary type="html">구조체, 클래스? 구조체와 클래스는 프로그래머가 데이터를 용도에 맞게 묶어 표현하고자 할 때 용이합니다. 구조체와 클래스는 프로퍼티와 메서드를 사용하여 데이터를 구조화하여 관리할 수 있습니다.</summary></entry><entry><title type="html">Introducing Lanyon</title><link href="http://localhost:4000/2014/01/02/introducing-lanyon.html" rel="alternate" type="text/html" title="Introducing Lanyon" /><published>2014-01-02T00:00:00+09:00</published><updated>2014-01-02T00:00:00+09:00</updated><id>http://localhost:4000/2014/01/02/introducing-lanyon</id><content type="html" xml:base="http://localhost:4000/2014/01/02/introducing-lanyon.html">&lt;p&gt;Lanyon is an unassuming &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; theme that places content first by tucking away navigation in a hidden drawer. It’s based on &lt;a href=&quot;http://getpoole.com&quot;&gt;Poole&lt;/a&gt;, the Jekyll butler.&lt;/p&gt;
 
 &lt;h3 id=&quot;built-on-poole&quot;&gt;Built on Poole&lt;/h3&gt;
 
