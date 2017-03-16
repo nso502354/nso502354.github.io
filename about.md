@@ -8,7 +8,7 @@ permalink: /about/
 * iOS, Andorid에 관심이 있으며, 기초를 쌓으며 개발자를 꿈꾸고 있습니다.
 * 세종대학교 컴퓨터공학과 수료 (2017.08 졸업예정)
 * e-mail : [nso502354@gmail.com](mailto:nso502354@gmail.com)
-* Github: [http://github.com/nso502354](http://github.com/nso502354)
+* Github: [https://github.com/nso502354](https://github.com/nso502354)
 
 ## 보유기술
 * Programming Language(Java, Swift3, Javascript, C#, C)
